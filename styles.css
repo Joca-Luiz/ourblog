@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --p-color: #1B1A17;
+    --s-color: #F0A500;
+    --t-color: #E45826;
+    --f-color: #E6D5B8;
+    --danger-color: #ff4444;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--t-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    background-color: var(--s-color);
+    height: 80vh;
+}
+
+main .welcome {
+    max-width: 450px;
+    width: 100%;
+
+    height: 300px;
+    padding: 30px;
+
+    background-color: var(--p-color);
+
+    position: absolute;
+    top: 40%; left: 45%;
+    transform: translate(-40%, -45%);
+
+    color: #fff;
+
+    border: 0;
+    -webkit-box-shadow: -5px 6px 9px 5px rgba(0,0,0,0.74); 
+    box-shadow: -5px 6px 9px 5px rgba(0,0,0,0.74);
+
+    opacity: 0;
+    animation: wealcomeFadeAnimation 1s forwards;
+}
+
+main .welcome h1 {
+    color: var(--t-color);
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-size: 40px;
+}
+
+main .welcome p {
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
+
+main .welcome button {
+    display: block;
+    margin: 10px auto 10px auto;
+    padding: 10px 20px;
+    background-color: var(--t-color);
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+main .welcome button:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.sections {
+    max-width: 90%;
+    width: 100%;
+
+    height: auto;
+
+    margin: 30px auto 30px auto;
+}
+
+.sections h1 {
+    color: var(--p-color);
+    font-size: 50px;
+    display: inline-block;
+}
+
+.sections span {
+    color: var(--p-color);
+    font-size: 30px;
+    display: inline-block;
+}
+
+.sections section {
+    background-color: var(--p-color);
+
+    width: 100%;
+    height: auto;
+    padding: 30px;
+
+    margin: 20px 0 0 0;
+    cursor: pointer;
+
+    -webkit-box-shadow: -5px 6px 9px 5px rgba(0,0,0,0.74); 
+    box-shadow: -5px 6px 9px 5px rgba(0,0,0,0.74);
+}
+
+.sections section img {
+    max-width: 40%;
+    width: 100%;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.sections section h1 {
+    font-size: 40px;
+    color: var(--s-color);
+}
+
+.sections section p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.about {
+    background-color: var(--f-color);
+
+    max-width: 100%;
+    padding: 50px;
+
+    height: auto;
+
+    margin: 30px 0 0 0;
+}
+
+.about #title {
+    color: var(--t-color);
+    font-size: 40px;
+    display: inline-block;
+}
+
+.about .close {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+}
+
+.about #text {
+    color: var(--p-color);
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
+
+.about #author {
+    color: var(--s-color);
+    font-size: 15px;
+    margin: 15px 0 0 0;
+    display: block;
+}
+
+.base {
+    background-color: var(--p-color);
+
+    max-width: 100%;
+    padding: 20px;
+
+    color: white;
+    text-align: center;
+}
+
+.base a {
+    color: lightblue;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    main .welcome {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+@keyframes wealcomeFadeAnimation {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
