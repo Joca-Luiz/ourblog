@@ -9,7 +9,6 @@
     --s-color: #F0A500;
     --t-color: #E45826;
     --f-color: #E6D5B8;
-    --danger-color: #ff4444;
 }
 
 html {
@@ -160,13 +159,13 @@ main .welcome button:hover {
 
 .about #text {
     color: var(--p-color);
-    font-size: 20px;
+    font-size: 25px;
     margin: 10px 0 0 0;
 }
 
 .about #author {
     color: var(--s-color);
-    font-size: 15px;
+    font-size: 20px;
     margin: 15px 0 0 0;
     display: block;
 }
@@ -190,6 +189,10 @@ main .welcome button:hover {
     main .welcome {
         max-width: 80%;
         height: auto;
+    }
+
+    .sections section img {
+        max-width: 80%;
     }
 }
 
